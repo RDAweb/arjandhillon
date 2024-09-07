@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&display=swap');
 body{
     background-color: rgb(41, 39, 39);
+    user-select: none;
 }
 
 *{
@@ -38,15 +39,26 @@ ul a{
     left: 600px;
     padding-left: 30px;
 }
+.homee a{
+    margin-left: -130px;
+    padding: 10px;
+}
+
+.contt{
+    position: relative;
+    left: 750px;
+}
 
 .homee a i{
-    width: 50px;
+    width: 40px;
     color: whitesmoke;
 }
 
 .Brand img{
     width: 49px;
-    padding: 0 8px;
+    height: 45px;
+    padding: 0 6px;
+    border-radius: 20px;
 }
 
 .Brand {
@@ -60,6 +72,7 @@ ul a{
 
 
 .container{
+    min-height: 70vh;
     background: linear-gradient(to left, rgb(56, 53, 53),black);
     color: whitesmoke;
     font-family: 'Varela Round', sans-serif;
@@ -68,11 +81,12 @@ ul a{
     width: 86%;
     border-radius: 12px;
     padding: 34px;
+    background-size:cover ;
 }
 
 .bottom{
     position: sticky;
-    height: 130px;
+    height: 150px;
     width: 100%;
     background-color: black;
     color: whitesmoke;
@@ -81,23 +95,54 @@ ul a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    user-select: none;
+}
+
+@media(min-width:1000px){
+    .bottom{
+        height: 130px;
+    }
 }
 
 .icons{
-    margin-top: 12px;
+    position: relative;
+    top: 2vh;
     
+}
+@media(min-width:1000px){
+    .icons{
+        top: 3vh;
+    }
 }
 
 .icons i{
     cursor: pointer;
+    margin-left: 10px;
+    font-size: 50px;
 }
 
+@media(min-width:1000px){
+    .icons i{
+        font-size: 30px;
+    }
+}
 #myProgressBar{
-    width: 90vw;
+    width: 80%;
+    margin-top: -10px;
     margin-bottom: 0px;
+    position: absolute;
     cursor: pointer;
-    transition: all 30s;
-    transition-duration: 2s;
+}
+
+.songinfo #masterSongName{
+    position: relative;
+    top: -50px;
+}
+
+@media(min-width:1000px){
+    .songinfo #masterSongName{
+        top: -50px;
+    }
 }
 
 
@@ -118,9 +163,9 @@ ul a{
 
 .songItem i{
     margin-left: 20px;
+    margin-right: 20px;
     color: white;
 }
-
 .songItem img{
     width: 60px;
     margin: 0 23px ;
@@ -138,19 +183,23 @@ ul a{
 
 .songinfo{
     position: absolute;
-    left: 100px;
+    left: 220px;
     bottom: 40px;
 }
 
 .songinfo img{
     opacity: 0;
+    position: absolute;
+    top: -55px;
+    left: -60px;
     transition: opacity 0.5s ease-in;
 }
 
 #loggo{
-    width: 130px;
     border-radius: 20px;
     box-shadow: 10px 5px 5px rgba(10, 30, 70, 3),-5px -5px 10px rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 170px;
 }
 
 .songlist h1{
