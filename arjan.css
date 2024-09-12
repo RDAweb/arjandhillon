@@ -133,7 +133,7 @@ body{
 }
 
 .bottom{
-    position: fixed;
+    position: sticky;
     height: 150px;
     width: 100%;
     background-color: black;
