@@ -545,6 +545,9 @@ ul li p{
     width: 250px;
     padding: 10px;
     font-size: 16px;
+    position: relative;
+    top: -35px;
+    left: 500px;
     border: 2px solid #1eded5;  /* Initial border color */
     border-radius: 30px;
     outline: none;
